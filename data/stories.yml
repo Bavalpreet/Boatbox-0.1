@@ -1,0 +1,98 @@
+version: "2.0"
+
+stories:
+
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+  - intent: thankyou
+  - action: utter_thankyou
+
+- story: ask repair_hull
+  steps:
+  - intent: greet
+  - action: action_greet
+  - intent: repair
+  - action: action_faq
+  - action: utter_did_that_help
+  - intent: no_repair_required
+  - action: utter_no_repair_required
+  - intent: affirm
+  - action: utter_happy
+  - intent: thankyou
+  - action: utter_thankyou
+
+- story: ask repair_core
+  steps:
+  - intent: greet
+  - action: action_greet
+  - intent: repair
+  - action: action_faq
+  - action: utter_did_that_help
+  - intent: no_repair_required
+  - action: utter_no_repair_required
+  - intent: affirm
+  - action: utter_happy
+  - intent: thankyou
+  - action: utter_thankyou
+
+- story: ask not_starting
+  steps:
+  - intent: greet
+  - action: action_greet
+  - intent: not_starting
+  - action: utter_not_starting
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: thankyou
+  - action: utter_thankyou
+
+- story: ask out_of_scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: thankyou
+  - action: utter_thankyou
+
+- story: ask cleaning_boat
+  steps:
+  - intent: cleaning_boat
+  - action: utter_cleaning_boat
+  - action: utter_cleaning_boat
+  - intent: no_repair_required
+  - action: utter_no_repair_required
+  - intent: thankyou
+  - action: utter_thankyou
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: action_greet
+  - intent: cleaning_boat 
+  - action: utter_cleaning_boat
+  - action: utter_did_that_help
+  - intent: thankyou
+  - action: utter_thankyou
+
+- story: no_repair_story
+  steps:
+  - intent: greet
+  - action: action_greet
+  - intent: repair
+  - action: action_faq
+  - action: utter_did_that_help
+  - intent: no_repair_required
+  - action: utter_no_repair_required
+  - intent: thankyou
+  - action: utter_thankyou
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: faq
+  steps:
+    - intent: greet
+    - action: action_greet
+    - intent: faq
+    - action: action_faq
