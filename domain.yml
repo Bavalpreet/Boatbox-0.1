@@ -2,17 +2,17 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- cleaning_boat
+# - cleaning_boat
 - no_repair_required
 - greet
 - goodbye
 - thankyou
 - affirm
 - deny
-- repair
+# - repair
 - out_of_scope
 - bot_challenge
-- not_starting
+# - not_starting
 - faq
 entities:
 - boat_manufacturer
@@ -25,15 +25,15 @@ slots:
     type: list
     initial_value: None
     influence_conversation: false
-  boat_manufacturer:
-    type: text
-    influence_conversation: true
+  # boat_manufacturer:
+  #   type: text
+  #   influence_conversation: true
 responses:
-  utter_cleaning_boat:
-  - text: Have a look at cleaning product range from this website https://stage.getaboatbox.com/smart-products/
-      for your {boat_manufacturer} boat
-  - text: You can use boat foam to clean any outer part of your {boat_manufacturer}
-      boat.
+  # utter_cleaning_boat:
+  # - text: Have a look at cleaning product range from this website https://stage.getaboatbox.com/smart-products/
+  #     for your {boat_manufacturer} boat
+  # - text: You can use boat foam to clean any outer part of your {boat_manufacturer}
+  #     boat.
   utter_no_repair_required:
   - text: Happy that i could help you :)
   - text: That's such a great news CHEERS
@@ -41,13 +41,13 @@ responses:
   utter_out_of_scope:
   - text: Ok can you please provide me some relevant info so that I can help you.
   - text: Sorry But i couldn't understand it.
-  utter_not_starting:
-  - text: It’s most likely an electrical issue.Start by checking your kill switch.
-      Shift into neutral, and examine the actual starter switch to see if it’s loose.
-      Tighten up any retaining screws to fasten the switch back into place. If it
-      groans without starting, it might be a poor connection or a low battery. Get
-      these checked out, and remember to inspect, clean and replace your ignition
-      system components
+  # utter_not_starting:
+  # - text: It’s most likely an electrical issue.Start by checking your kill switch.
+  #     Shift into neutral, and examine the actual starter switch to see if it’s loose.
+  #     Tighten up any retaining screws to fasten the switch back into place. If it
+  #     groans without starting, it might be a poor connection or a low battery. Get
+  #     these checked out, and remember to inspect, clean and replace your ignition
+  #     system components
   utter_did_that_help:
   - text: Did that help you?
   - text: Do you Need any other help.
@@ -65,7 +65,7 @@ responses:
   utter_thankyou:
   - text: It was my pleasure to help you hope I can help you in future
 actions:
-- utter_cleaning_boat
+# - utter_cleaning_boat
 - utter_did_that_help
 - utter_goodbye
 - utter_happy
@@ -73,5 +73,5 @@ actions:
 - utter_out_of_scope
 - action_greet
 - utter_thankyou
-- utter_not_starting
+# - utter_not_starting
 - action_faq

@@ -14,26 +14,24 @@ nlu:
     - perfectly fine working
     - Hmmm no issues with any boat part
     - yeah it's good to go
-
-- intent: repair
-  examples: |
-    - I have issues with my [core](boat_part) can u help
-    - my [core](boat_part) is damaged need some tips.
-    - [core](boat_part) damaged completely.
-    - I have minor issues with my [core](boat_part)
-    - water entering through hull fittings in my [core](boat_part) pls help
-    - major issues with deck fittings and [core](boat_part) is getting damaged
-    - [core](boat_part) repair can you help me
-    - I have issues with my [hull](boat_part)
-    - my [hull](boat_part) is damaged.
-    - [hull](boat_part) damaged completely.
-    - [hull](boat_part) destroyed completely.
-    - I have minor issues with my [hull](boat_part)
-    - cracks in my [hull](boat_part)
-    - major issues with fibreglass of [hull](boat_part)
-    - [hull](boat_part) repair can you help me
-    - can you suggest some tips to repair my [hull](boat_part)
-
+# - intent: repair
+#   examples: |
+#     - I have issues with my [core](boat_part) can u help
+#     - my [core](boat_part) is damaged need some tips.
+#     - [core](boat_part) damaged completely.
+#     - I have minor issues with my [core](boat_part)
+#     - water entering through hull fittings in my [core](boat_part) pls help
+#     - major issues with deck fittings and [core](boat_part) is getting damaged
+#     - [core](boat_part) repair can you help me
+#     - I have issues with my [hull](boat_part)
+#     - my [hull](boat_part) is damaged.
+#     - [hull](boat_part) damaged completely.
+#     - [hull](boat_part) destroyed completely.
+#     - I have minor issues with my [hull](boat_part)
+#     - cracks in my [hull](boat_part)
+#     - major issues with fibreglass of [hull](boat_part)
+#     - [hull](boat_part) repair can you help me
+#     - can you suggest some tips to repair my [hull](boat_part)
 - intent: greet
   examples: |
     - hey
@@ -53,7 +51,7 @@ nlu:
     - heya
     - how's you doing boatbox
     - how are you boatbox
-
+    
 - intent: goodbye
   examples: |
     - good afternoon
@@ -103,27 +101,26 @@ nlu:
     - don't like that
     - no way
     - not really
+    - its not what i want to say
+# - intent: cleaning_boat
+#   examples: |
+#     - can you help me cleaning my [actioncraft](boat_manufacturer)
+#     - Hi pls help me with cleaning my [sea pro](boat_manufacturer) [center console](boat_model)
+#     - i want to remove stains from my [robalo](boat_manufacturer)
+#     - wanted to clean my [ranger](boat_manufacturer) can you help
+#     - hey can yoou help me cleaning my outer parts of boat
+#     - needed some equipments to clean my [gradywhite](boat_manufacturer)
+#     - huge marks on my [22 ft](boat_length) [maycraft](boat_manufacturer) how to clean it.
+#     - dirty stains on my [26 foot](boat_length) [robalo](boat_manufacturer) how to remove them
+#     - how to remove wax from my [carolina skiff](boat_manufacturer) [255](boat_model)
 
-- intent: cleaning_boat
-  examples: |
-    - can you help me cleaning my [actioncraft](boat_manufacturer)
-    - Hi pls help me with cleaning my [sea pro](boat_manufacturer) [center console](boat_model)
-    - i want to remove stains from my [robalo](boat_manufacturer)
-    - wanted to clean my [ranger](boat_manufacturer) can you help
-    - hey can yoou help me cleaning my outer parts of boat
-    - needed some equipments to clean my [gradywhite](boat_manufacturer)
-    - huge marks on my [22 ft](boat_length) [maycraft](boat_manufacturer) how to clean it.
-    - dirty stains on my [26 foot](boat_length) [robalo](boat_manufacturer) how to remove them
-    - how to remove wax from my [carolina skiff](boat_manufacturer) [255](boat_model)
-    
-- intent: not_starting
-  examples: |
-    - my engine is not starting
-    - my boat is not starting
-    - When i turned the key on my boat nothing happens
-    - Why my boat is suddenly not starting
-    - help! my outboard won't start
-
+# - intent: not_starting
+#   examples: |
+#     - my engine is not starting
+#     - my boat is not starting
+#     - When i turned the key on my boat nothing happens
+#     - Why my boat is suddenly not starting
+#     - help! my outboard won't start
 - intent: out_of_scope
   examples: |
     - i have changed my mind
@@ -154,7 +151,38 @@ nlu:
     - What is hypoid gear oil?
     - hypoid gear oil what is it?
     - can you tell me something about hypoid gear oil?
-    - i am using [robalo](boat_manufacturer) boats from past 10 years resently found that there is problem in my [gauge](boat_part), can you help me out there?
+    - i am using [robalo](boat_manufacturer) boats from past 10 years resently found that there is problem in my gauge, can you help me out there?
+    - i am using [robalo](boat_manufacturer) [235](boat_model) [2014](year_of_manufacturing) build , when yesterday i went for fishing what happen was my [gauge](boat_part) accidently stops working, what to do?
+    - I have issues with my [core](boat_part) can u help
+    - my [core](boat_part) is damaged need some tips.
+    - [core](boat_part) damaged completely.
+    - I have minor issues with my [core](boat_part)
+    - water entering through hull fittings in my [core](boat_part) pls help
+    - major issues with deck fittings and [core](boat_part) is getting damaged
+    - [core](boat_part) repair can you help me
+    - I have issues with my [hull](boat_part)
+    - my [hull](boat_part) is damaged.
+    - [hull](boat_part) damaged completely.
+    - [hull](boat_part) destroyed completely.
+    - I have minor issues with my [hull](boat_part)
+    - cracks in my [hull](boat_part)
+    - major issues with fibreglass of [hull](boat_part)
+    - [hull](boat_part) repair can you help me
+    - can you suggest some tips to repair my [hull](boat_part)
+    - can you help me cleaning my [actioncraft](boat_manufacturer)
+    - Hi pls help me with cleaning my [sea pro](boat_manufacturer) [center console](boat_model)
+    - i want to remove stains from my [robalo](boat_manufacturer)
+    - wanted to clean my [ranger](boat_manufacturer) can you help
+    - hey can yoou help me cleaning my outer parts of boat
+    - needed some equipments to clean my [gradywhite](boat_manufacturer)
+    - huge marks on my [22 ft](boat_length) [maycraft](boat_manufacturer) how to clean it.
+    - dirty stains on my [26 foot](boat_length) [robalo](boat_manufacturer) how to remove them
+    - how to remove wax from my [carolina skiff](boat_manufacturer) [255](boat_model)
+    - my engine is not starting
+    - my boat is not starting
+    - When i turned the key on my boat nothing happens
+    - Why my boat is suddenly not starting
+    - help! my outboard won't start
 
 - intent: bot_challenge
   examples: |

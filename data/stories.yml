@@ -13,7 +13,7 @@ stories:
   steps:
   - intent: greet
   - action: action_greet
-  - intent: repair
+  - intent: faq
   - action: action_faq
   - action: utter_did_that_help
   - intent: no_repair_required
@@ -27,7 +27,7 @@ stories:
   steps:
   - intent: greet
   - action: action_greet
-  - intent: repair
+  - intent: faq
   - action: action_faq
   - action: utter_did_that_help
   - intent: no_repair_required
@@ -41,8 +41,8 @@ stories:
   steps:
   - intent: greet
   - action: action_greet
-  - intent: not_starting
-  - action: utter_not_starting
+  - intent: faq
+  - action: action_faq
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
@@ -58,9 +58,8 @@ stories:
 
 - story: ask cleaning_boat
   steps:
-  - intent: cleaning_boat
-  - action: utter_cleaning_boat
-  - action: utter_cleaning_boat
+  - intent: faq
+  - action: action_faq
   - intent: no_repair_required
   - action: utter_no_repair_required
   - intent: thankyou
@@ -70,8 +69,8 @@ stories:
   steps:
   - intent: greet
   - action: action_greet
-  - intent: cleaning_boat 
-  - action: utter_cleaning_boat
+  - intent: faq
+  - action: action_faq
   - action: utter_did_that_help
   - intent: thankyou
   - action: utter_thankyou
@@ -80,7 +79,7 @@ stories:
   steps:
   - intent: greet
   - action: action_greet
-  - intent: repair
+  - intent: faq
   - action: action_faq
   - action: utter_did_that_help
   - intent: no_repair_required
