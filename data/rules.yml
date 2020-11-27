@@ -11,3 +11,12 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: respond to generalQs
+  steps:
+  - intent: generalQ
+  - action: utter_generalQ
+- rule: respond to chitchat
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat

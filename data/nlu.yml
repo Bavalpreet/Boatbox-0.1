@@ -190,3 +190,33 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: generalQ/mooring
+  examples: |
+    - How is the maximum vessel length determined for my mooring?
+    - how to calculate maximum length of vessel
+    - how to do mooring?
+    - what is mooring?
+    - what is meaning of mooring?
+
+- intent: generalQ/teak_surfing
+  examples: |
+    - what is teak surfing?
+    - how to perform teak surfing?
+    - how teak surfing is done?
+    - can you explain what exactly teak surfing is?
+    - please elaborate about teak surfing?
+
+- intent: chitchat/ask_name
+  examples: |
+      - What is your name?
+      - May I know your name?
+      - What do people call you?
+      - Do you have a name for yourself?
+
+- intent: chitchat/ask_weather
+  examples: |
+      - What's the weather like today?
+      - Does it look sunny outside today?
+      - Oh, do you mind checking the weather for me please?
+      - I like sunny days.

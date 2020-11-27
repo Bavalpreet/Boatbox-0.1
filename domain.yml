@@ -2,24 +2,25 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-# - cleaning_boat
 - no_repair_required
 - greet
 - goodbye
 - thankyou
 - affirm
 - deny
-# - repair
 - out_of_scope
 - bot_challenge
-# - not_starting
 - faq
+- chitchat
+- generalQ
+
 entities:
 - boat_manufacturer
 - boat_part
 - boat_length
 - boat_model
 - year_of_manufacturing
+
 slots:
   boat_info:
     type: list
@@ -34,6 +35,17 @@ responses:
   #     for your {boat_manufacturer} boat
   # - text: You can use boat foam to clean any outer part of your {boat_manufacturer}
   #     boat.
+  utter_generalQ/mooring:
+  - text: Maximum Vessel Length (MVL) is determined by a formula that includes body swing radius, pickup rope length and maximum swing room. The formula ensures safety for vessel occupants in the event of an emergency.
+  utter_generalQ/teak_surfing:
+  - text: Teak surfing is performed by a person hanging onto the swim platform (often made of teak wood) at the back of a boat while the boat is moving forward. Often swimmers will let go of the platform and body surf on the boat's wake. Although teak surfing is not illegal in some states, it is extremely dangerous due to the risk of carbon monoxide poisoning and sudden loss of consciousness resulting in death. The United States Coast Guard advises boaters not to teak surf. Please help spread this safety message and discourage teak surfing.
+
+  utter_chitchat/ask_name:
+  - text: Hello, my name is Boatbox.
+  - text: I am called Boatbox bot!
+  utter_chitchat/ask_weather:
+  - text: Oh, have a look at it.[check weather](https://www.accuweather.com/en)
+  
   utter_no_repair_required:
   - text: Happy that i could help you :)
   - text: That's such a great news CHEERS
@@ -64,14 +76,17 @@ responses:
   - text: I am a bot, powered by Rasa.
   utter_thankyou:
   - text: It was my pleasure to help you hope I can help you in future
+
 actions:
-# - utter_cleaning_boat
 - utter_did_that_help
 - utter_goodbye
 - utter_happy
 - utter_no_repair_required
 - utter_out_of_scope
+- utter_generalQ/mooring
+- utter_generalQ/teak_surfing
+- utter_chitchat/ask_name
+- utter_chitchat/ask_weather
 - action_greet
 - utter_thankyou
-# - utter_not_starting
 - action_faq
