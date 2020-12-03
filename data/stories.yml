@@ -13,8 +13,8 @@ stories:
   steps:
   - intent: greet
   - action: action_greet
-  - intent: faq
-  - action: action_faq
+  - intent: specificq
+  - action: action_specificq
   - action: utter_did_that_help
   - intent: no_repair_required
   - action: utter_no_repair_required
@@ -27,8 +27,8 @@ stories:
   steps:
   - intent: greet
   - action: action_greet
-  - intent: faq
-  - action: action_faq
+  - intent: specificq
+  - action: action_specificq
   - action: utter_did_that_help
   - intent: no_repair_required
   - action: utter_no_repair_required
@@ -41,13 +41,14 @@ stories:
   steps:
   - intent: greet
   - action: action_greet
-  - intent: faq
-  - action: action_faq
+  - intent: specificq
+  - action: action_specificq
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
   - intent: thankyou
   - action: utter_thankyou
+
 
 - story: ask out_of_scope
   steps:
@@ -58,8 +59,8 @@ stories:
 
 - story: ask cleaning_boat
   steps:
-  - intent: faq
-  - action: action_faq
+  - intent: specificq
+  - action: action_specificq
   - intent: no_repair_required
   - action: utter_no_repair_required
   - intent: thankyou
@@ -69,8 +70,8 @@ stories:
   steps:
   - intent: greet
   - action: action_greet
-  - intent: faq
-  - action: action_faq
+  - intent: specificq
+  - action: action_specificq
   - action: utter_did_that_help
   - intent: thankyou
   - action: utter_thankyou
@@ -79,8 +80,8 @@ stories:
   steps:
   - intent: greet
   - action: action_greet
-  - intent: faq
-  - action: action_faq
+  - intent: specificq
+  - action: action_specificq
   - action: utter_did_that_help
   - intent: no_repair_required
   - action: utter_no_repair_required
@@ -89,9 +90,55 @@ stories:
   - intent: goodbye
   - action: utter_goodbye
 
-- story: faq
+- story: specificq
   steps:
     - intent: greet
     - action: action_greet
-    - intent: faq
-    - action: action_faq
+    - intent: specificq
+    - action: action_specificq
+
+- story: interactive_story_2
+  steps:
+  - intent: greet
+  - action: action_greet
+  - intent: specificq
+    entities:
+    - boat_part: hull
+  - slot_was_set:
+    - boat_part:
+      - hull
+  - action: action_specificq
+  - slot_was_set:
+    - boat_part: null
+  - action: utter_did_that_help
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: specificq-2
+  steps:
+  - intent: greet
+  - action: action_greet
+  - intent: specificq
+    entities:
+    - boat_part: hull
+  - slot_was_set:
+    - boat_part:
+      - hull
+  - action: action_specificq
+  - slot_was_set:
+    - boat_part: null
+  - action: utter_did_that_help
+  - intent: specificq
+    entities:
+    - boat_part: livewell
+  - slot_was_set:
+    - boat_part:
+      - livewell
+  - action: action_specificq
+  - slot_was_set:
+    - boat_part: null
+  - slot_was_set:
+    - engine_series: null
+  - action: utter_did_that_help

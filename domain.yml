@@ -9,73 +9,105 @@ intents:
 - affirm
 - deny
 - out_of_scope
-- bot_challenge
-- faq
+- specificq
 - chitchat
 - generalQ
-
+- bot_challenge
 entities:
 - boat_manufacturer
 - boat_part
+- engine_series
+- engine_manufacturer
 - boat_length
 - boat_model
 - year_of_manufacturing
-
+- consumable
+- process
+- material
 slots:
-  boat_info:
+  boat_length:
     type: list
-    initial_value: None
+    initial_value: []
     influence_conversation: false
-  # boat_manufacturer:
-  #   type: text
-  #   influence_conversation: true
+  boat_manufacturer:
+    type: list
+    initial_value: []
+    influence_conversation: false
+  boat_model:
+    type: list
+    initial_value: []
+    influence_conversation: false
+  boat_part:
+    type: list
+    initial_value: []
+    influence_conversation: false
+  consumable:
+    type: list
+    initial_value: []
+    influence_conversation: false
+  engine_manufacturer:
+    type: list
+    initial_value: []
+    influence_conversation: false
+  engine_series:
+    type: list
+    initial_value: []
+    influence_conversation: false
+  material:
+    type: list
+    initial_value: []
+    influence_conversation: false
+  process:
+    type: list
+    initial_value: []
+    influence_conversation: false
+  year_of_manufacturing:
+    type: list
+    initial_value: []
+    influence_conversation: false
 responses:
-  # utter_cleaning_boat:
-  # - text: Have a look at cleaning product range from this website https://stage.getaboatbox.com/smart-products/
-  #     for your {boat_manufacturer} boat
-  # - text: You can use boat foam to clean any outer part of your {boat_manufacturer}
-  #     boat.
-  utter_generalQ/mooring:
-  - text: Maximum Vessel Length (MVL) is determined by a formula that includes body swing radius, pickup rope length and maximum swing room. The formula ensures safety for vessel occupants in the event of an emergency.
-  utter_generalQ/teak_surfing:
-  - text: Teak surfing is performed by a person hanging onto the swim platform (often made of teak wood) at the back of a boat while the boat is moving forward. Often swimmers will let go of the platform and body surf on the boat's wake. Although teak surfing is not illegal in some states, it is extremely dangerous due to the risk of carbon monoxide poisoning and sudden loss of consciousness resulting in death. The United States Coast Guard advises boaters not to teak surf. Please help spread this safety message and discourage teak surfing.
-
-  utter_chitchat/ask_name:
-  - text: Hello, my name is Boatbox.
-  - text: I am called Boatbox bot!
-  utter_chitchat/ask_weather:
-  - text: Oh, have a look at it.[check weather](https://www.accuweather.com/en)
-  
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  utter_did_that_help:
+  - text: Do you Need any other help.
+  - text: Can i help you some other way.
+  - text: Thanks can I help you some other way.
+  - text: Hope I could help you
+  utter_goodbye:
+  - text: Bye tc :)
+  - text: Bbye it was nice talking to you.
+  - text: see you soon.
+  utter_happy:
+  - text: Great, carry on!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
   utter_no_repair_required:
   - text: Happy that i could help you :)
   - text: That's such a great news CHEERS
   - text: Perfect
   utter_out_of_scope:
-  - text: Ok can you please provide me some relevant info so that I can help you.
-  - text: Sorry But i couldn't understand it.
-  # utter_not_starting:
-  # - text: It’s most likely an electrical issue.Start by checking your kill switch.
-  #     Shift into neutral, and examine the actual starter switch to see if it’s loose.
-  #     Tighten up any retaining screws to fasten the switch back into place. If it
-  #     groans without starting, it might be a poor connection or a low battery. Get
-  #     these checked out, and remember to inspect, clean and replace your ignition
-  #     system components
-  utter_did_that_help:
-  - text: Did that help you?
-  - text: Do you Need any other help.
-  - text: Can i help you some other way.
-  - text: Thanks can I help you some other way.
-  - text: Hope I could help you
-  utter_happy:
-  - text: Great, carry on!
-  utter_goodbye:
-  - text: Bye
-  - text: Bbye it was nice talking to you.
-  - text: see you soon
-  utter_iamabot:
-  - text: I am a bot, powered by Rasa.
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  - text: Sorry But i couldn't understand it I think it's out of my scope :).
   utter_thankyou:
-  - text: It was my pleasure to help you hope I can help you in future
+  - text: It was  my pleasure to help you Hope I can help you in future
+
+  utter_generalQ/mooring:
+  - text: Maximum Vessel Length (MVL) is determined by a formula that includes body
+      swing radius, pickup rope length and maximum swing room. The formula ensures
+      safety for vessel occupants in the event of an emergency.
+  utter_generalQ/teak_surfing:
+  - text: Teak surfing is performed by a person hanging onto the swim platform (often
+      made of teak wood) at the back of a boat while the boat is moving forward. Often
+      swimmers will let go of the platform and body surf on the boat's wake. Although
+      teak surfing is not illegal in some states, it is extremely dangerous due to
+      the risk of carbon monoxide poisoning and sudden loss of consciousness resulting
+      in death. The United States Coast Guard advises boaters not to teak surf. Please
+      help spread this safety message and discourage teak surfing.
+  utter_chitchat/ask_name:
+  - text: Hello, my name is Boatbox.
+  - text: I am called Boatbox bot!
+  utter_chitchat/ask_weather:
+  - text: Oh, have a look at it.[check weather](https://www.accuweather.com/en)
 
 actions:
 - utter_did_that_help
@@ -83,10 +115,10 @@ actions:
 - utter_happy
 - utter_no_repair_required
 - utter_out_of_scope
+- utter_thankyou
+- action_specificq
+- action_greet
 - utter_generalQ/mooring
 - utter_generalQ/teak_surfing
 - utter_chitchat/ask_name
 - utter_chitchat/ask_weather
-- action_greet
-- utter_thankyou
-- action_faq
