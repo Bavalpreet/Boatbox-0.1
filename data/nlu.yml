@@ -168,6 +168,14 @@ nlu:
     - can you explain what exactly teak surfing is?
     - please elaborate about teak surfing?
 
+- intent: generalQ/min_age_for_ski_craft
+  examples: |
+    - what is the required minimum age to operate ski craft.
+    - how much old should i be to operate ski craft
+    - what's the minimum age barrier for individual to use ski craft
+    - I am 18 year old can i operate ski craft
+    - age requirements for using ski craft
+    
 - intent: chitchat/ask_name
   examples: |
     - What is your name?

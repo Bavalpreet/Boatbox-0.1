@@ -103,6 +103,8 @@ responses:
       the risk of carbon monoxide poisoning and sudden loss of consciousness resulting
       in death. The United States Coast Guard advises boaters not to teak surf. Please
       help spread this safety message and discourage teak surfing.
+  utter_generalQ/min_age_for_ski_craft:
+  - text: You must be at least 16 years of age to operate a ski craft. That's the minimum requirement.
   utter_chitchat/ask_name:
   - text: Hello, my name is Boatbox.
   - text: I am called Boatbox bot!
