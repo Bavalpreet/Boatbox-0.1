@@ -91,11 +91,11 @@ responses:
   utter_thankyou:
   - text: It was  my pleasure to help you Hope I can help you in future
 
-  utter_generalQ/mooring:
+  utter_generalQ/mooring-query:
   - text: Maximum Vessel Length (MVL) is determined by a formula that includes body
       swing radius, pickup rope length and maximum swing room. The formula ensures
       safety for vessel occupants in the event of an emergency.
-  utter_generalQ/teak_surfing:
+  utter_generalQ/teak-surfing-query:
   - text: Teak surfing is performed by a person hanging onto the swim platform (often
       made of teak wood) at the back of a boat while the boat is moving forward. Often
       swimmers will let go of the platform and body surf on the boat's wake. Although
@@ -103,11 +103,32 @@ responses:
       the risk of carbon monoxide poisoning and sudden loss of consciousness resulting
       in death. The United States Coast Guard advises boaters not to teak surf. Please
       help spread this safety message and discourage teak surfing.
-  utter_generalQ/min_age_for_ski_craft:
+  utter_generalQ/min-age-for-ski-craft-query:
   - text: You must be at least 16 years of age to operate a ski craft. That's the minimum requirement.
+  utter_generalQ/no-of-people-towed-query:
+  - text: No more than six people may be towed on one or more inflatable tubes and no more than two people may be towed on water skis, aquaplanes, or other devices from the same motorboat at the same time.
+  utter_generalQ/observers-query:
+  - text: When towing less than three people, there must be one observer (not including the operator). For three or more people being towed behind a motorboat, there must be two observers in addition to the operator. Observers must be a minimum of 13 years of age and physically able to assist the people being towed
+ 
+  utter_generalQ/distance-between-watercraft-query:
+  - text: You must be 150' from other boats, docks, swim rafts, mooring fields, swimmers, designated swimming areas, floats, and shore before traveling above headway speed.
+ 
+  utter_generalQ/diff-bw-ski-craft-and-PWC-query:
+  - text: A ski craft is defined as, less than 13' in length as manufactured, capable of exceeding 20 mph, and has the capacity to carry not more than the operator and one other person. There are additional regulations that ski craft operators must follow. A personal watercraft (pwc) has the capacity to carry more than the operator and one passenger and must follow the regulations set forth for a motor boat.
+
+  utter_generalQ/headway-speed-query:
+  - text: Headway speed is 6 mph or the slowest speed to travel and still maintain steerage.
+
+  utter_generalQ/anchor-query:
+  - text: It is legal for someone to anchor in front of a house, as water bodies over 10 acres in size are public bodies of water.
+  
+  utter_generalQ/family-boat-query:
+  - text: Check out bowriders, deck boats, or something of that nature. Family boating needs can be addressed by using the Boat Selector tool to learn the difference between various boat types.[Boat Selector tool](https://www.discoverboating.ca/buying/boatselector.aspx)
+
   utter_chitchat/ask_name:
   - text: Hello, my name is Boatbox.
   - text: I am called Boatbox bot!
+ 
   utter_chitchat/ask_weather:
   - text: Oh, have a look at it.[check weather](https://www.accuweather.com/en)
 
@@ -120,7 +141,15 @@ actions:
 - utter_thankyou
 - action_specificq
 - action_greet
-- utter_generalQ/mooring
-- utter_generalQ/teak_surfing
+- utter_generalQ/mooring-query
+- utter_generalQ/teak-surfing-query
+- utter_generalQ/min-age-for-ski-craft-query
+- utter_generalQ/no-of-people-towed-query
+- utter_generalQ/observers-query
+- utter_generalQ/distance-between-watercraft-query
+- utter_generalQ/diff-bw-ski-craft-and-PWC-query
+- utter_generalQ/headway-speed-query
+- utter_generalQ/anchor-query
+- utter_generalQ/family-boat-query
 - utter_chitchat/ask_name
 - utter_chitchat/ask_weather
