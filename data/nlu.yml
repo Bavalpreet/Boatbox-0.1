@@ -152,7 +152,7 @@ nlu:
     - i am using [seahunt](boat_manufacturer) [235](boat_model) [2000](year_of_manufacturing) build it's showing problem in it's helm area .
     - from last 2 years i am having a boat but now i want to use Yamaha Fuel managment on my [OPTIMAX](engine_series)
 
-- intent: generalQ/mooring
+- intent: generalQ/mooring-query
   examples: |
     - How is the maximum vessel length determined for my mooring?
     - how to calculate maximum length of vessel
@@ -160,7 +160,7 @@ nlu:
     - what is mooring?
     - what is meaning of mooring?
 
-- intent: generalQ/teak_surfing
+- intent: generalQ/teak-surfing-query
   examples: |
     - what is teak surfing?
     - how to perform teak surfing?
@@ -168,7 +168,32 @@ nlu:
     - can you explain what exactly teak surfing is?
     - please elaborate about teak surfing?
 
-- intent: generalQ/min_age_for_ski_craft
+- intent: generalQ/observers-query
+  examples: |
+    - How many observers do I need while towing a skier or other device?
+    - Minimum number of observers required to tow a watercraft?
+    - minimum no. of observers required to tow a device.
+    - How many observers are needed in order to tow something?
+    - what is the count of observers required to tow a device?
+
+- intent: generalQ/no-of-people-towed-query
+  examples: |
+    - How many people can be towed behind a vessel at one time?
+    - Maximum number of people towed behind the vehicle
+    - how many people we can two behind a watercraft legally.
+    - According to the rules how many people are permitted to be towed behind a watercraft
+    - what is the count of people to be towed behind the water vehicle
+    - how many persons can be towed by a boat
+
+- intent: generalQ/distance-between-watercraft-query
+  examples: |
+    - How far do I have to be from other boats, docks, swim rafts, and shore when I am going above headway speed?
+    - what is the minimum distance to be maintained among two watercrafts, when going above headway speed.
+    - when going above the headway speed, what is the minimum feasible distance to be maintained between different watercrafts.
+    - According to law what is minimum distance of vehicle from the dock when speed is above headway?
+    - By rule how much apart a swim rafts is to be from other boats or shore when going above headway speed
+
+- intent: generalQ/min-age-for-ski-craft-query
   examples: |
     - what is the required minimum age to operate ski craft.
     - how much old should i be to operate ski craft
@@ -176,6 +201,37 @@ nlu:
     - I am 18 year old can i operate ski craft
     - age requirements for using ski craft
     
+- intent: generalQ/diff-bw-ski-craft-and-PWC-query
+  examples: |
+    - What is the difference between a ski craft and a PWC?
+    - How can we differentiate between ski craft and PWC
+    - Difference between personal watercraft ie pwc and ski craft
+    - how ski craft is different from personal watercraft
+    - what are major dissimilarity between pwc and ski craft
+
+- intent: generalQ/diff-bw-ski-craft-and-PWC-query
+  examples: |
+    - what is headway speed?
+    - what is the slowest speed?
+    - what is the minimum speed with which a vehicle can travel
+    - Minimum speed to be maintained by any watercraft?
+    - can you please let me know the headway speed to main tain steerage?
+
+- intent: generalQ/anchor-query
+  examples: |
+    - Is it legal for someone to anchor right in front of my house?
+    - can someone anchor in front of residential area
+    - is anchoring allowed legally in front of someone's house
+    - can anyone anchor a boat in front of my house without my permission
+    - is it legally right for someone to anchor a watercraft in front of my home?
+
+- intent: generalQ/family-boat-query
+  examples: |
+    - What is a good, simple boat for a family who wants to ski and fish?
+    - any recommendations for a family boat used for skying and fishing
+    - some good boats for the purpose of skying and fishing for a family
+    - looking for a family boat which solves the purpose of ski and fisging both
+
 - intent: chitchat/ask_name
   examples: |
     - What is your name?
