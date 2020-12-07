@@ -125,6 +125,90 @@ responses:
   utter_generalQ/family-boat-query:
   - text: Check out bowriders, deck boats, or something of that nature. Family boating needs can be addressed by using the Boat Selector tool to learn the difference between various boat types.[Boat Selector tool](https://www.discoverboating.ca/buying/boatselector.aspx)
 
+  utter_generalQ/sleep-query:
+  - text: Overnight mooring is illegal in the State of NH, although it is legal to sleep on your boat overnight while 
+          tied to a dock when you have the landowner's permission. In addition, landowners must notify the 
+          Department of Environmental Services in writing.
+
+  utter_generalQ/best-boat-query:
+  - text: One of the terrific things about boating is that there are boats designed for different activities. 
+          Multi-purpose boating is a common choice for many boaters. In this case, boaters wish to buy a boat which will 
+          serve as a fishing, skiing and picnic boat.Performing a boat comparison can help to narrow down your search. 
+          Do you enjoy fishing on the local waterways? Are you looking for a boat to use for waterskiing, wakeboarding 
+          and other exciting water sports? Are you looking for a craft designed for family boating? Do you want a boat for 
+          a little of everything. You can check it here https://www.discoverboating.ca/buying/boatselector.aspx
+
+  utter_generalQ/cost-query:
+  - text: Buying a boat doesn’t have to be painful — there’s a boat for every budget. Boat owners are often surprised
+          that their dream boat cost less than they’d expected! New boats and pre-owned boats bought at a reputable 
+          dealership can be financed, so you can take advantage of monthly payments. As with cars, pre-owned boats 
+          typically cost less than a similar new model.
+
+  utter_generalQ/new-or-old-query:
+  - text: We suggest that you shop new first. You will gain insight into which type of boat is best 
+          for you and the market price. You can then do a boat comparison on similar pre-owned models.
+          With this information, you can zero in on your perfect boat!
+
+  utter_generalQ/dealer-query:
+  - text: Shop around a little... boat shows are also ideal for finding the dealer that suits you best. 
+          Choose a dealer who is convenient to where you’ll be using your boat. The dealer who goes out of his/her 
+          way to get you on the water, knowing you are qualified and ready to buy, should get high marks.
+
+  utter_generalQ/license-query:
+  - text: The Competency of Operators of Pleasure Craft Regulations will require all operators of pleasure craft 
+          fitted with a motor and used for recreational purposes to have proof of competency. These requirements are 
+          being phased in. All operators born after April 1, 1983 and all operators of craft under 4 metres in length 
+          must now have proof of competency. By September 15, 2009, all operators will be required to have proof of
+          competency.
+
+  utter_generalQ/best-time-query:
+  - text: The best time is when you are ready! You can find a great deal on a boat at any time of year. 
+          Boat shows are great places to shop — you can compare boats from a wide variety of brands and dealers,
+          and can often take advantage of special show pricing and financing offers. Just be sure you’ve done some 
+          homework and identified the right type of boat for your needs before you buy.
+
+  utter_generalQ/boat-length-query:
+  - text: The size of boat you choose depends on how many people will be boating with you and where you plan on boating. 
+          Make sure you anticipate these things accurately to ensure boater safety each time you’re under way. 
+          Every new boat has a "capacity plate" that tells you how many people you can safely have on board.
+          If your choice comes down to a question of 2–4 feet in size, buy more if your budget allows. 
+          Doing this will allow you to keep your boat longer as your needs change. 
+          Choose a boat that is no more than 26-feet long if you plan on trailering to different waterways and marinas.
+
+  utter_generalQ/insurance-cover-query:
+  - text: It is best to have what is known as an "All Risk" policy, which will provide coverage for all types of 
+          losses except those specifically excluded in the policy. Typical exclusions may include wear and tear, 
+          gradual deterioration, marring, denting, scratching, animal damage, manufacturer's defects, defects in design, 
+          and ice and freezing.
+
+  utter_generalQ/certified-boat-query:
+  - text: Yes, be sure to look for a boat that's Transport Canada and NMMA Certified. NMMA    
+          Certified boats meet all applicable Transport Canada regulations as well as the more comprehensive 
+          standards of the American Boat and Yacht Council (ABYC). Choosing boats with these certifications can 
+          greatly increase boater safety and guarantee boating fun every time you go out!
+
+  utter_generalQ/trailering-query:
+  - text: If you've never trailered a boat, there are several things you need to consider. 
+          First is the towing capacity of your car, truck or SUV. You can find this information in your vehicle's 
+          owner's manual. Generally, small family sedans are not safe boater options for towing, although a small, 
+          aluminum fishing boat may not present a problem, provided you have appropriate towing equipment installed 
+          on the car. Most standard pick-up trucks and SUVs can tow boats up to 25 feet, but again, consult your 
+          vehicle owner's manual for limitations.
+
+  utter_generalQ/best-place-boat-store-query:
+  - text: A key component of recreational boating is the question of where to keep your boat when you're not using it.
+          Budget, convenience and availability play into the equation and should be part of any boat comparison process 
+          and pre-purchase family discussion. There are a couple of options you may want to consider.
+          You won't find a less-expensive way to keep a boat than storing it on a trailer in your driveway or
+          backyard (be sure to check your local bylaws). Another alternative for smaller boats is rack storage, or dry 
+          stacks. A typical rack storage facility keeps your boat in a covered shed filled with trailer-like
+          cradles. For owners of larger boats, and owners of small boats who crave convenience, a marina slip is the 
+          best way to go
+  utter_generalQ/boat-condition-query:
+  - text: Get a qualified marine surveyor’s inspection. Surveyors will check all systems, as well as the hull 
+          structure and can ensure that boat maintenance has been upheld. Call several insurance companies in 
+          your area for recommended surveyors.
+
   utter_chitchat/ask_name:
   - text: Hello, my name is Boatbox.
   - text: I am called Boatbox bot!
@@ -151,5 +235,18 @@ actions:
 - utter_generalQ/headway-speed-query
 - utter_generalQ/anchor-query
 - utter_generalQ/family-boat-query
+- utter_generalQ/sleep-query
+- utter_generalQ/best-boat-query
+- utter_generalQ/cost-query
+- utter_generalQ/new-or-old-query
+- utter_generalQ/dealer-query
+- utter_generalQ/license-query
+- utter_generalQ/best-time-query
+- utter_generalQ/boat-length-query
+- utter_generalQ/insurance-cover-query
+- utter_generalQ/certified-boat-query
+- utter_generalQ/trailering-query
+- utter_generalQ/best-place-boat-store-query
+- utter_generalQ/boat-condition-query
 - utter_chitchat/ask_name
 - utter_chitchat/ask_weather

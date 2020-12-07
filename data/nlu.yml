@@ -232,6 +232,101 @@ nlu:
     - some good boats for the purpose of skying and fishing for a family
     - looking for a family boat which solves the purpose of ski and fisging both
 
+- intent: generalQ/sleep-query
+  examples: |
+    - Can we sleep on boat overnight?
+    - Is it allowed to sleep on boat overnight
+    - is it fine to sleep on boat on night
+    - Are there any problems in having a sleep at boat during night
+    - Just a query Is it ok to have sleep on  boat at night time.
+- intent: generalQ/best-boat-query
+  examples: |
+    - Which type of boat is right for me?
+    - I want to buya boat for myself any suggestions
+    - I am looking for new boat which one should i choose
+    - Need some suggestions which type of baot will be better
+    - Hey hope you are well can you suggest which boat is good for me
+    - Hi boatbox can you tell which boaat will suit me 
+    - hey i am interested in new boat what should i go for  
+- intent: generalQ/cost-query
+  examples: |
+    -  What can be cost of a boat
+    -  How much does a boat cost
+    -  I am planning to buya BOat but can i know what amount i will have to spend to buuy a boat
+    -  can you tell how much i will have to spend from pocket to buy a new boat
+- intent: generalQ/new-or-old-query
+  examples: |
+    - What should i opt for new or old boat
+    - Should i buya new boat or old boat
+    - Which is better for newbie old or new boat
+    - Boatbox should i go for new boat or old one
+- intent: generalQ/dealer-query
+  examples: |
+    - How can i find a good dealer
+    - can you suggest me where can i find good dealer
+    - where can i find a boat dealer 
+    - any top boat dealer ?
+- intent: generalQ/license-query
+  examples: |
+    - Do I need a licence to operate a boat?
+    - Will it be mandatory to have a license to ride a boat
+    - Is it required to have a lic for boat rider
+    - Does boat pilot needa license 
+    - just wanted to know is it really important to have license to do boating as boat driver
+- intent: generalQ/best-time-query
+  examples: |
+    - What is the best time to buy a boat ?  
+    - Accordning to you which is best time when i can i buy new boat
+    - new boat what should be best time
+    - i AM LOOKING FOR A BOAT when should i buya
+    - Which time of year is best to geta new boat
+- intent: generalQ/boat-length-query
+  examples: |
+    - How big of a boat will I need?
+    - what should be apt length of a boat i am looking for a new one?
+    - What should be ggod length of boat recommended?
+    - what would be appropriate length of boat for me?
+    - Can i ask for suggestion of boat length appropriate for a boat rider
+- intent: generalQ/insurance-cover-query
+  examples: |
+    -  What is the best insurance coverage for my boat?
+    -  which insurance cover will be best suited for me
+    -  can you recommend best insurance cover for me
+    -  Any recommendations of insurance cover for my boat
+    -  Hey Boatbox can you suggest an Insurance policy 
+    -  I have a new boat do you any idea for insurance cover best suited for me
+- intent: generalQ/certified-boat-query
+  examples: |
+    - Should I buy a certified boat?
+    - I am looking for new boat should i go for certified or uncertified
+    - IS it recommended to have uncertified booat
+    - can you recommend are certified boats preferred or not?
+    - does there any harm in using uncertified boats?
+    - I am looking for new boat should i go for certified or uncertified
+- intent: generalQ/trailering-query
+  examples: |
+    - What are the things I need to consider when trailering a boat for the first time?
+    - When trailering a boat for first time what items would i need
+    - what items are needeed while trailering
+    - Hey Boatbox what would i need for trailering my boat
+    - I want to tow my boat what would be required
+    - I am in problem i am going for trailering my boat what should i carry along
+- intent: generalQ/best-place-boat-store-query
+  examples: |
+    - What is the best place to store my boat?
+    - What should i keep in mind while storing my boat
+    - which place is recommended to store my boat
+    - where to keep your boat when you're not using it.
+    - I have a boat that i use for  some time in a year but when i am not using it where should i keep it
+    - Bought a boat but i am confused where to keep it while i am not using it
+- intent: generalQ/boat-condition-query
+  examples: |
+    - If I buy used, how do I know the boat is in good condition?
+    - how to chek whether a boat is in good condition or not
+    - I a looking to buy a used boat how to check state of it
+    - how to suspect the condition of used boat before buying
+    - is there any method to ensure the condition of used boat
+
 - intent: chitchat/ask_name
   examples: |
     - What is your name?
