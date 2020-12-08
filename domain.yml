@@ -90,7 +90,7 @@ responses:
   - text: Sorry But i couldn't understand it I think it's out of my scope :).
   utter_thankyou:
   - text: It was  my pleasure to help you Hope I can help you in future
-
+  
   utter_generalQ/mooring-query:
   - text: Maximum Vessel Length (MVL) is determined by a formula that includes body
       swing radius, pickup rope length and maximum swing room. The formula ensures
@@ -217,6 +217,7 @@ responses:
   - text: Oh, have a look at it.[check weather](https://www.accuweather.com/en)
 
 actions:
+- utter_please_rephrase
 - utter_did_that_help
 - utter_goodbye
 - utter_happy
