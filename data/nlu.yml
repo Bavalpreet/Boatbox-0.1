@@ -86,7 +86,6 @@ nlu:
 - intent: out_of_scope
   examples: |
     - i have changed my mind
-    - Can you tell me the weather
     - what's the time
     - where is the pizza boy
     - can i get some pizza
@@ -97,7 +96,7 @@ nlu:
     - can you suggest me some grocery shopping places
     - can you play some music
     - play some music for me
-    - who is US president
+    - what is 2+2?
     - who is President of USA?
     - what about deep learning books
 - intent: specificq
