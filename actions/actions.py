@@ -81,15 +81,17 @@ class Action_SpecificQ(ActionGreet):
             model,embeddings,solutions = ActionGreet.loader(self)
 
             message=tracker.latest_message['text']
-
+            message = message.lower()#make the input text into lowercase
+            print(message)
             test=model.encode(message)
 
             #boat_part
             boat_part_slot = tracker.get_slot("boat_part") # this is a list slot so we will store all entities 
                                                     # extracted from an intent but if no entity is extracted
                                                     # tracker returns None Type value
-
-            boat_part_slot=( [] if boat_part_slot is None else boat_part_slot)  # to convert None type to empty list
+            
+            boat_part_slot=( [] if boat_part_slot is None else boat_part_slot) # to convert None type to empty list
+            boat_part_slot = [i.lower() for i in boat_part_slot if len(boat_part_slot) >= 1]# converting the UPPER case entity to lowercase
 
             # print(boat_part_slot,tracker.slots)
 
@@ -97,54 +99,61 @@ class Action_SpecificQ(ActionGreet):
             engine_series_slot=tracker.get_slot("engine_series")
 
             engine_series_slot= ( [] if engine_series_slot is None else engine_series_slot) # to convert None type to empty list
-
+            engine_series_slot = [i.lower() for i in engine_series_slot if len(engine_series_slot) >= 1]
             
             # boat_manufacturer
 
             boat_manufacturer_slot=tracker.get_slot("boat_manufacturer")
 
             boat_manufacturer_slot= ( [] if boat_manufacturer_slot is None else boat_manufacturer_slot)
-
+            boat_manufacturer_slot = [i.lower() for i in boat_manufacturer_slot if len(boat_manufacturer_slot) >= 1]
 
             # engine_manufacturer
             engine_manufacturer_slot=tracker.get_slot("engine_manufacturer")
 
             engine_manufacturer_slot= ( [] if engine_manufacturer_slot is None else engine_manufacturer_slot)
+            engine_manufacturer_slot = [i.lower() for i in engine_manufacturer_slot if len(engine_manufacturer_slot) >= 1]
 
             # boat_length
             boat_length_slot=tracker.get_slot("boat_length")
 
             boat_length_slot= ( [] if boat_length_slot is None else boat_length_slot)
+            boat_length_slot = [i.lower() for i in boat_length_slot if len(boat_length_slot) >= 1]
 
             # boat_model_slot
 
             boat_model_slot=tracker.get_slot("boat_model")
 
             boat_model_slot= ( [] if boat_model_slot is None else boat_model_slot)
+            boat_model_slot = [i.lower() for i in boat_model_slot if len(boat_model_slot) >= 1]
 
             # year_of_manufacturing_slot
 
             year_of_manufacturing_slot=tracker.get_slot("year_of_manufacturing")
 
             year_of_manufacturing_slot= ( [] if year_of_manufacturing_slot is None else year_of_manufacturing_slot)
+            year_of_manufacturing_slot = [i.lower() for i in year_of_manufacturing_slot if len(year_of_manufacturing_slot) >= 1]
 
             # consumable
 
             consumable_slot=tracker.get_slot("consumable")
 
             consumable_slot= ( [] if consumable_slot is None else consumable_slot)
+            consumable_slot = [i.lower() for i in consumable_slot if len(consumable_slot) >= 1]
 
             # process
 
             process_slot=tracker.get_slot("process")
 
             process_slot= ( [] if process_slot is None else process_slot)
+            process_slot = [i.lower() for i in process_slot if len(process_slot) >= 1]
 
             # material
 
             material_slot=tracker.get_slot("material")
 
             material_slot= ( [] if material_slot is None else material_slot)
+            material_slot = [i.lower() for i in material_slot if len(material_slot) >= 1]
 
 
 
