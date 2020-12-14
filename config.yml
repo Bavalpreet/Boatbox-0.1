@@ -37,7 +37,10 @@ policies:
   - name: MemoizationPolicy
   - name: TEDPolicy
     max_history: 5
-    epochs: 100
+    # epochs: 100
+    epochs: 200
+    batch_size: 50
+    max_training_samples: 300
   - name: RulePolicy
   # Confidence threshold for the `core_fallback_action_name` to apply.
   # The action will apply if no other action was predicted with
