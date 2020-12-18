@@ -1,9 +1,0 @@
-bavalpreet
-
-dec 3
-implementing regex
-- regex: age
-  examples: |
-    - ^[1-9][0-9]?$
-we were trying to use this for the age for ski boats.
-drawback entities will increase and will create problem in future.
