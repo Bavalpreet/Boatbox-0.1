@@ -113,9 +113,9 @@ nlu:
     - can i use Yamaha fuel managment on my [Optimax](engine_series)?
     - I want to use Yamaha Fuel Management on [optimax](engine_series) will it be ok?
     - Should i be concerned of using yamaha fm on my [optimax](engine_series)?
-    - What is hypoid [gear oil](consumable)?
-    - hypoid [gear oil](consumable) what is it?
-    - can you tell me something about hypoid [gear oil](consumable)?
+    - What is hypoid gear [oil](consumable)?
+    - hypoid gear [oil](consumable) what is it?
+    - can you tell me something about hypoid gear [oil](consumable)?
     - i am using [robalo](boat_manufacturer) boats from past 10 years resently found that there is problem in my [gauge](boat_part), can you help me out there?
     - i am using [robalo](boat_manufacturer) [235](boat_model) [2014](year_of_manufacturing) build , when yesterday i went for fishing what happen was my [gauge](boat_part) accidently stops working, what to do?
     - I have issues with my [core](boat_part) can u help
@@ -146,6 +146,7 @@ nlu:
     - dirty stains on my [26 foot](boat_length) [robalo](boat_manufacturer) how to remove them
     - how to remove wax from my [carolina skiff](boat_manufacturer) [255](boat_model)
     - my [engine](boat_part) is not starting
+    - What kind of [oil](consumable) goes in tilt trim
     - can i use [evinrude](engine_manufacturer) [e-tec](engine_series) for my new boat?
     - is [evinrude](engine_manufacturer) compatible with all type of boats?
     - i am using [seahunt](boat_manufacturer) [235](boat_model) [2000](year_of_manufacturing) build it's showing problem in it's helm area .
