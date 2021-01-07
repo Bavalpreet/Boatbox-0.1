@@ -6,8 +6,17 @@ pipeline:
 # # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
 # # If you'd like to customize it, uncomment and adjust the pipeline.
 # # See https://rasa.com/docs/rasa/tuning-your-model for more information.
-  - name: WhitespaceTokenizer
+  # - name: WhitespaceTokenizer
+  # - name: RegexFeaturizer
+  # - name: LexicalSyntacticFeaturizer
+
+  - name: SpacyNLP   # this is nmae of language model we want to use
+    model: "en_core_web_lg"
+  - name: SpacyTokenizer
+  - name: SpacyFeaturizer
+    pooling: mean
   - name: RegexFeaturizer
+  - name: SpacyEntityExtractor
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
   - name: CountVectorsFeaturizer
@@ -15,6 +24,7 @@ pipeline:
     min_ngram: 1
     max_ngram: 4
   - name: DIETClassifier
+      # entity_recognition: False
     epochs: 100
   - name: EntitySynonymMapper
   - name: ResponseSelector
