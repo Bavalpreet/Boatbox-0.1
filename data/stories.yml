@@ -103,13 +103,13 @@ stories:
   - action: action_greet
   - intent: specificq
     entities:
-    - boat_part: hull
+    - BOAT_PART: hull
   - slot_was_set:
-    - boat_part:
+    - BOAT_PART:
       - hull
   - action: action_specificq
   - slot_was_set:
-    - boat_part: null
+    - BOAT_PART: null
   - action: utter_did_that_help
   - intent: out_of_scope
   - action: utter_out_of_scope
@@ -122,23 +122,23 @@ stories:
   - action: action_greet
   - intent: specificq
     entities:
-    - boat_part: hull
+    - BOAT_PART: hull
   - slot_was_set:
-    - boat_part:
+    - BOAT_PART:
       - hull
   - action: action_specificq
   - slot_was_set:
-    - boat_part: null
+    - BOAT_PART: null
   - action: utter_did_that_help
   - intent: specificq
     entities:
-    - boat_part: livewell
+    - BOAT_PART: livewell
   - slot_was_set:
-    - boat_part:
+    - BOAT_PART:
       - livewell
   - action: action_specificq
   - slot_was_set:
-    - boat_part: null
+    - BOAT_PART: null
   - slot_was_set:
-    - engine_series: null
+    - ENGINE_SERIES: null
   - action: utter_did_that_help

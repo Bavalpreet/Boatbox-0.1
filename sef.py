@@ -1,92 +1,92 @@
 from rasa_sdk.events import SlotSet
 
 def entity_finder(tracker,name_entities):
-    boat_part, engine_series, boat_manufacturer, engine_manufacturer, boat_length, boat_model, year_of_manufacturing, consumable, process, material = name_entities
-    #boat_part
-    boat_part_slot = tracker.get_slot(str(boat_part)) # this is a list slot so we will store all entities 
+    BOAT_PART, ENGINE_SERIES, BOAT_MANUFACTURER, ENGINE_MANUFACTURER, BOAT_LENGTH, BOAT_MODEL, YEAR_OF_MANUFACTURING, CONSUMABLE, PROCESS, MATERIAL = name_entities
+    #BOAT_PART
+    BOAT_PART_slot = tracker.get_slot(str(BOAT_PART)) # this is a list slot so we will store all entities 
                                             # extracted from an intent but if no entity is extracted
                                             # tracker returns None Type value
     
-    boat_part_slot=( [] if boat_part_slot is None else boat_part_slot) # to convert None type to empty list
-    boat_part_slot = [i.lower() for i in boat_part_slot if len(boat_part_slot) >= 1]# converting the UPPER case entity to lowercase
+    BOAT_PART_slot=( [] if BOAT_PART_slot is None else BOAT_PART_slot) # to convert None type to empty list
+    BOAT_PART_slot = [i.lower() for i in BOAT_PART_slot if len(BOAT_PART_slot) >= 1]# converting the UPPER case entity to lowercase
 
-    # print(boat_part_slot,tracker.slots)
+    # print(BOAT_PART_slot,tracker.slots)
 
-    # engine_series
-    engine_series_slot=tracker.get_slot(str(engine_series))
+    # ENGINE_SERIES
+    ENGINE_SERIES_slot=tracker.get_slot(str(ENGINE_SERIES))
 
-    engine_series_slot= ( [] if engine_series_slot is None else engine_series_slot) # to convert None type to empty list
-    engine_series_slot = [i.lower() for i in engine_series_slot if len(engine_series_slot) >= 1]
+    ENGINE_SERIES_slot= ( [] if ENGINE_SERIES_slot is None else ENGINE_SERIES_slot) # to convert None type to empty list
+    ENGINE_SERIES_slot = [i.lower() for i in ENGINE_SERIES_slot if len(ENGINE_SERIES_slot) >= 1]
     
-    # boat_manufacturer
+    # BOAT_MANUFACTURER
 
-    boat_manufacturer_slot=tracker.get_slot(str(boat_manufacturer))
+    BOAT_MANUFACTURER_slot=tracker.get_slot(str(BOAT_MANUFACTURER))
 
-    boat_manufacturer_slot= ( [] if boat_manufacturer_slot is None else boat_manufacturer_slot)
-    boat_manufacturer_slot = [i.lower() for i in boat_manufacturer_slot if len(boat_manufacturer_slot) >= 1]
+    BOAT_MANUFACTURER_slot= ( [] if BOAT_MANUFACTURER_slot is None else BOAT_MANUFACTURER_slot)
+    BOAT_MANUFACTURER_slot = [i.lower() for i in BOAT_MANUFACTURER_slot if len(BOAT_MANUFACTURER_slot) >= 1]
 
-    # engine_manufacturer
-    engine_manufacturer_slot=tracker.get_slot(str(engine_manufacturer))
+    # ENGINE_MANUFACTURER
+    ENGINE_MANUFACTURER_slot=tracker.get_slot(str(ENGINE_MANUFACTURER))
 
-    engine_manufacturer_slot= ( [] if engine_manufacturer_slot is None else engine_manufacturer_slot)
-    engine_manufacturer_slot = [i.lower() for i in engine_manufacturer_slot if len(engine_manufacturer_slot) >= 1]
+    ENGINE_MANUFACTURER_slot= ( [] if ENGINE_MANUFACTURER_slot is None else ENGINE_MANUFACTURER_slot)
+    ENGINE_MANUFACTURER_slot = [i.lower() for i in ENGINE_MANUFACTURER_slot if len(ENGINE_MANUFACTURER_slot) >= 1]
 
-    # boat_length
-    boat_length_slot=tracker.get_slot(str(boat_length))
+    # BOAT_LENGTH
+    BOAT_LENGTH_slot=tracker.get_slot(str(BOAT_LENGTH))
 
-    boat_length_slot= ( [] if boat_length_slot is None else boat_length_slot)
-    boat_length_slot = [i.lower() for i in boat_length_slot if len(boat_length_slot) >= 1]
+    BOAT_LENGTH_slot= ( [] if BOAT_LENGTH_slot is None else BOAT_LENGTH_slot)
+    BOAT_LENGTH_slot = [i.lower() for i in BOAT_LENGTH_slot if len(BOAT_LENGTH_slot) >= 1]
 
-    # boat_model_slot
+    # BOAT_MODEL_slot
 
-    boat_model_slot=tracker.get_slot(str(boat_model))
+    BOAT_MODEL_slot=tracker.get_slot(str(BOAT_MODEL))
 
-    boat_model_slot= ( [] if boat_model_slot is None else boat_model_slot)
-    boat_model_slot = [i.lower() for i in boat_model_slot if len(boat_model_slot) >= 1]
+    BOAT_MODEL_slot= ( [] if BOAT_MODEL_slot is None else BOAT_MODEL_slot)
+    BOAT_MODEL_slot = [i.lower() for i in BOAT_MODEL_slot if len(BOAT_MODEL_slot) >= 1]
 
-    # year_of_manufacturing_slot
+    # YEAR_OF_MANUFACTURING_slot
 
-    year_of_manufacturing_slot=tracker.get_slot(str(year_of_manufacturing))
+    YEAR_OF_MANUFACTURING_slot=tracker.get_slot(str(YEAR_OF_MANUFACTURING))
 
-    year_of_manufacturing_slot= ( [] if year_of_manufacturing_slot is None else year_of_manufacturing_slot)
-    year_of_manufacturing_slot = [i.lower() for i in year_of_manufacturing_slot if len(year_of_manufacturing_slot) >= 1]
+    YEAR_OF_MANUFACTURING_slot= ( [] if YEAR_OF_MANUFACTURING_slot is None else YEAR_OF_MANUFACTURING_slot)
+    YEAR_OF_MANUFACTURING_slot = [i.lower() for i in YEAR_OF_MANUFACTURING_slot if len(YEAR_OF_MANUFACTURING_slot) >= 1]
 
-    # consumable
+    # CONSUMABLE
 
-    consumable_slot=tracker.get_slot(str(consumable))
+    CONSUMABLE_slot=tracker.get_slot(str(CONSUMABLE))
 
-    consumable_slot= ( [] if consumable_slot is None else consumable_slot)
-    consumable_slot = [i.lower() for i in consumable_slot if len(consumable_slot) >= 1]
+    CONSUMABLE_slot= ( [] if CONSUMABLE_slot is None else CONSUMABLE_slot)
+    CONSUMABLE_slot = [i.lower() for i in CONSUMABLE_slot if len(CONSUMABLE_slot) >= 1]
 
-    # process
+    # PROCESS
 
-    process_slot=tracker.get_slot(str(process))
+    PROCESS_slot=tracker.get_slot(str(PROCESS))
 
-    process_slot= ( [] if process_slot is None else process_slot)
-    process_slot = [i.lower() for i in process_slot if len(process_slot) >= 1]
+    PROCESS_slot= ( [] if PROCESS_slot is None else PROCESS_slot)
+    PROCESS_slot = [i.lower() for i in PROCESS_slot if len(PROCESS_slot) >= 1]
 
-    # material
+    # MATERIAL
 
-    material_slot=tracker.get_slot(str(material))
+    MATERIAL_slot=tracker.get_slot(str(MATERIAL))
 
-    material_slot= ( [] if material_slot is None else material_slot)
-    material_slot = [i.lower() for i in material_slot if len(material_slot) >= 1]
-
-
+    MATERIAL_slot= ( [] if MATERIAL_slot is None else MATERIAL_slot)
+    MATERIAL_slot = [i.lower() for i in MATERIAL_slot if len(MATERIAL_slot) >= 1]
 
 
-    total_info=boat_part_slot+engine_series_slot+boat_manufacturer_slot+engine_manufacturer_slot+boat_length_slot+boat_model_slot+year_of_manufacturing_slot+consumable_slot+process_slot+material_slot
+
+
+    total_info=BOAT_PART_slot+ENGINE_SERIES_slot+BOAT_MANUFACTURER_slot+ENGINE_MANUFACTURER_slot+BOAT_LENGTH_slot+BOAT_MODEL_slot+YEAR_OF_MANUFACTURING_slot+CONSUMABLE_slot+PROCESS_slot+MATERIAL_slot
     
     return total_info
 
 
 
 def slot_setter(name_entities):
-    boat_part, engine_series, boat_manufacturer, engine_manufacturer, boat_length, boat_model, year_of_manufacturing, consumable, process, material = name_entities
+    BOAT_PART, ENGINE_SERIES, BOAT_MANUFACTURER, ENGINE_MANUFACTURER, BOAT_LENGTH, BOAT_MODEL, YEAR_OF_MANUFACTURING, CONSUMABLE, PROCESS, MATERIAL = name_entities
 
-    ss = [SlotSet(str(boat_part), None),SlotSet(str(engine_series), None),
-                        SlotSet(str(boat_manufacturer), None),SlotSet(str(engine_manufacturer), None),SlotSet(str(boat_length), None)
-                        ,SlotSet(str(boat_model), None),SlotSet(str(year_of_manufacturing), None),SlotSet(str(consumable), None)
-                        ,SlotSet(str(process), None),SlotSet(str(material), None)]
+    ss = [SlotSet(str(BOAT_PART), None),SlotSet(str(ENGINE_SERIES), None),
+                        SlotSet(str(BOAT_MANUFACTURER), None),SlotSet(str(ENGINE_MANUFACTURER), None),SlotSet(str(BOAT_LENGTH), None)
+                        ,SlotSet(str(BOAT_MODEL), None),SlotSet(str(YEAR_OF_MANUFACTURING), None),SlotSet(str(CONSUMABLE), None)
+                        ,SlotSet(str(PROCESS), None),SlotSet(str(MATERIAL), None)]
 
     return ss

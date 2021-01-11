@@ -82,10 +82,10 @@ class Action_SpecificQ(ActionGreet):
             user_msg_emb=model.encode(message)
             
             #name of entities we have to update when increse entities
-            name_entities = ['boat_part', 'engine_series', 'boat_manufacturer', 'engine_manufacturer', 'boat_length', 'boat_model', 'year_of_manufacturing', 'consumable', 'process', 'material']
+            name_entities = ['BOAT_PART', 'ENGINE_SERIES', 'BOAT_MANUFACTURER', 'ENGINE_MANUFACTURER', 'BOAT_LENGTH', 'BOAT_MODEL', 'YEAR_OF_MANUFACTURING', 'CONSUMABLE', 'PROCESS', 'MATERIAL']
             total_info = entity_finder(tracker,name_entities)    
      
-            # Now after getting all diffrent types of slots No we have added them to boat_part_slot variable 
+            # Now after getting all diffrent types of slots No we have added them to BOAT_PART_slot variable 
             # and then will make pattern to see any of these are available in our answers file
             
             print(total_info)
